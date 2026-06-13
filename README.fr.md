@@ -2,12 +2,12 @@
 
 Kit de démarrage pour rédiger des articles **Insights RodiumAi** et les importer dans le dashboard via upload Markdown.
 
-| Fichier | Rôle |
-| ------- | ---- |
-| [template.md](./template.md) | Modèle bilingue vide avec tous les marqueurs requis |
-| [example.md](./example.md) | Exemple d'article rempli (quickstart API) |
+| Fichier                        | Rôle                                                      |
+| ------------------------------ | --------------------------------------------------------- |
+| [template.md](./template.md)   | Modèle bilingue vide avec tous les marqueurs requis       |
+| [example.md](./example.md)     | Exemple d'article rempli (quickstart API)                 |
 | [AI-PROMPT.md](./AI-PROMPT.md) | Prompt à copier-coller pour ChatGPT, Claude, Cursor, etc. |
-| [README.md](./README.md) | Version anglaise de ce guide |
+| [README.md](./README.md)       | Version anglaise de ce guide                              |
 
 Les insights publiés apparaissent sur [rodiumai.io/insights](https://rodiumai.io/insights).
 
@@ -68,15 +68,15 @@ Corps Markdown en français (optionnel)...
 
 ### Sections requises
 
-| Marqueur | Obligatoire | Notes |
-| -------- | ----------- | ----- |
-| `*Title_EN*` | Oui | Titre principal sur le site |
-| `*Summary_EN*` | Oui | 10–500 caractères ; cartes et SEO |
-| `*Tags*` | Oui | Séparés par des virgules, minuscules, sans `#` |
-| `*Content_EN*` | Oui | Article complet en Markdown |
-| `*Title_FR*` | Non | Affiché quand l'utilisateur passe en français |
-| `*Summary_FR*` | Non | Résumé carte en français |
-| `*Content_FR*` | Non | Corps complet en français |
+| Marqueur       | Obligatoire | Notes                                          |
+| -------------- | ----------- | ---------------------------------------------- |
+| `*Title_EN*`   | Oui         | Titre principal sur le site                    |
+| `*Summary_EN*` | Oui         | 10–500 caractères ; cartes et SEO              |
+| `*Tags*`       | Oui         | Séparés par des virgules, minuscules, sans `#` |
+| `*Content_EN*` | Oui         | Article complet en Markdown                    |
+| `*Title_FR*`   | Non         | Affiché quand l'utilisateur passe en français  |
+| `*Summary_FR*` | Non         | Résumé carte en français                       |
+| `*Content_FR*` | Non         | Corps complet en français                      |
 
 ### Commentaires d'en-tête (optionnels)
 
@@ -84,6 +84,7 @@ Les lignes `#` en haut du fichier sont pour les auteurs :
 
 ```markdown
 # RodiumAi insight — Markdown upload format
+
 # English required. French optional.
 ```
 
@@ -115,7 +116,7 @@ Les lignes `#` en haut du fichier sont pour les auteurs :
 
 Dans `*Content_EN*` et `*Content_FR*`, le Markdown standard fonctionne :
 
-- **Gras**, *italique*, listes, tableaux, citations
+- **Gras**, _italique_, listes, tableaux, citations
 - Images : `![texte alt](https://votre-cdn.com/image.png)`
 - Liens vers les pages RodiumAi
 
@@ -149,10 +150,10 @@ Checklist :
 
 ## Fichiers exemples
 
-| Fichier | Description |
-| ------- | ----------- |
-| [example.md](./example.md) | Quickstart API court (bilingue) |
-| [template.md](./template.md) | Point de départ vide |
+| Fichier                      | Description                     |
+| ---------------------------- | ------------------------------- |
+| [example.md](./example.md)   | Quickstart API court (bilingue) |
+| [template.md](./template.md) | Point de départ vide            |
 
 D'autres exemples publiés vivent dans le monorepo RodiumAi sous `rodiumai_docs/content/` (intégrations, modèles, programme RODISTAR, etc.).
 
@@ -168,13 +169,13 @@ Passez ensuite la checklist ci-dessus avant l'upload.
 
 ## Dépannage
 
-| Problème | Correction |
-| -------- | ---------- |
-| Titre non détecté | Marqueur exact `*Title_EN*` sur sa propre ligne |
-| Résumé refusé | Ajuster entre 10 et 500 caractères |
-| Corps FR absent | Ajouter `*Content_FR*` ou publier en anglais seul |
-| Mise en forme cassée | Éviter le HTML ; rester en Markdown |
-| Tags non lus | Une ligne, virgules, sans crochets |
+| Problème             | Correction                                        |
+| -------------------- | ------------------------------------------------- |
+| Titre non détecté    | Marqueur exact `*Title_EN*` sur sa propre ligne   |
+| Résumé refusé        | Ajuster entre 10 et 500 caractères                |
+| Corps FR absent      | Ajouter `*Content_FR*` ou publier en anglais seul |
+| Mise en forme cassée | Éviter le HTML ; rester en Markdown               |
+| Tags non lus         | Une ligne, virgules, sans crochets                |
 
 ---
 
@@ -185,4 +186,4 @@ Passez ensuite la checklist ci-dessus avant l'upload.
 - Modèles : [rodiumai.io/models](https://rodiumai.io/models)
 - Docs : [rodiumai.io/docs](https://rodiumai.io/docs)
 
-Questions sur la publication ? Contactez l'équipe RodiumAi via [rodiumai.io/contact](https://rodiumai.io/contact).
+Questions sur la publication ? Contactez l'équipe RodiumAi via [rodiumai.io/help/contact](https://rodiumai.io/help/contact).

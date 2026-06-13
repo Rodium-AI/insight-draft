@@ -2,12 +2,12 @@
 
 Starter kit for writing **RodiumAi Insights** articles and importing them into the dashboard via Markdown upload.
 
-| File | Purpose |
-| ---- | ------- |
-| [template.md](./template.md) | Empty bilingual template with all required markers |
-| [example.md](./example.md) | Filled sample article (API quickstart) |
+| File                           | Purpose                                             |
+| ------------------------------ | --------------------------------------------------- |
+| [template.md](./template.md)   | Empty bilingual template with all required markers  |
+| [example.md](./example.md)     | Filled sample article (API quickstart)              |
 | [AI-PROMPT.md](./AI-PROMPT.md) | Copy-paste prompt for ChatGPT, Claude, Cursor, etc. |
-| [README.fr.md](./README.fr.md) | French version of this guide |
+| [README.fr.md](./README.fr.md) | French version of this guide                        |
 
 Published insights appear on [rodiumai.io/insights](https://rodiumai.io/insights).
 
@@ -68,15 +68,15 @@ French Markdown body (optional)...
 
 ### Required sections
 
-| Marker | Required | Notes |
-| ------ | -------- | ----- |
-| `*Title_EN*` | Yes | Main title on the site |
-| `*Summary_EN*` | Yes | 10–500 characters; used in cards and SEO |
-| `*Tags*` | Yes | Comma-separated, lowercase, no `#` |
-| `*Content_EN*` | Yes | Full article in Markdown |
-| `*Title_FR*` | No | Shown when user switches to French |
-| `*Summary_FR*` | No | French card summary |
-| `*Content_FR*` | No | Full French body |
+| Marker         | Required | Notes                                    |
+| -------------- | -------- | ---------------------------------------- |
+| `*Title_EN*`   | Yes      | Main title on the site                   |
+| `*Summary_EN*` | Yes      | 10–500 characters; used in cards and SEO |
+| `*Tags*`       | Yes      | Comma-separated, lowercase, no `#`       |
+| `*Content_EN*` | Yes      | Full article in Markdown                 |
+| `*Title_FR*`   | No       | Shown when user switches to French       |
+| `*Summary_FR*` | No       | French card summary                      |
+| `*Content_FR*` | No       | Full French body                         |
 
 ### Header comments (optional)
 
@@ -84,6 +84,7 @@ Lines starting with `#` at the top of the file are ignored by readers but help a
 
 ```markdown
 # RodiumAi insight — Markdown upload format
+
 # English required. French optional.
 ```
 
@@ -115,7 +116,7 @@ Lines starting with `#` at the top of the file are ignored by readers but help a
 
 Inside `*Content_EN*` and `*Content_FR*`, standard Markdown works:
 
-- **Bold**, *italic*, lists, tables, blockquotes
+- **Bold**, _italic_, lists, tables, blockquotes
 - Images: `![alt text](https://your-cdn.com/image.png)`
 - Internal links to RodiumAi pages
 
@@ -149,10 +150,10 @@ Checklist:
 
 ## Example files in this repo
 
-| File | Description |
-| ---- | ----------- |
-| [example.md](./example.md) | Short API quickstart (bilingual) |
-| [template.md](./template.md) | Blank starting point |
+| File                         | Description                      |
+| ---------------------------- | -------------------------------- |
+| [example.md](./example.md)   | Short API quickstart (bilingual) |
+| [template.md](./template.md) | Blank starting point             |
 
 Real published examples live in the RodiumAi docs monorepo under `rodiumai_docs/content/` (integration guides, model spotlights, RODISTAR program, etc.).
 
@@ -168,13 +169,13 @@ Then run the checklist above before upload.
 
 ## Troubleshooting
 
-| Problem | Fix |
-| ------- | --- |
-| Title not detected | Marker must be exactly `*Title_EN*` on its own line |
-| Summary rejected | Shorten or lengthen to 10–500 characters |
-| French body missing | Add `*Content_FR*` section or publish English-only |
-| Broken formatting | Avoid HTML; stick to Markdown |
-| Tags not parsed | Single line, commas, no brackets |
+| Problem             | Fix                                                 |
+| ------------------- | --------------------------------------------------- |
+| Title not detected  | Marker must be exactly `*Title_EN*` on its own line |
+| Summary rejected    | Shorten or lengthen to 10–500 characters            |
+| French body missing | Add `*Content_FR*` section or publish English-only  |
+| Broken formatting   | Avoid HTML; stick to Markdown                       |
+| Tags not parsed     | Single line, commas, no brackets                    |
 
 ---
 
@@ -185,4 +186,4 @@ Then run the checklist above before upload.
 - Models: [rodiumai.io/models](https://rodiumai.io/models)
 - Docs: [rodiumai.io/docs](https://rodiumai.io/docs)
 
-Questions about publishing? Contact the RodiumAi team via [rodiumai.io/contact](https://rodiumai.io/contact).
+Questions about publishing? Contact the RodiumAi team via [rodiumai.io/help/contact](https://rodiumai.io/help/contact).
